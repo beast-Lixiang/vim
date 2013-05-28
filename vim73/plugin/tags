@@ -1,0 +1,10 @@
+add_message	/Users/zuturn/code/crent/apps/logics/friend.py	/^        msg_data = friend.message.add_message('new/
+f_info	/Users/zuturn/code/crent/apps/logics/friend.py	/^        f_d = f_info(rk_user, uid, report_protect_/
+get	/Users/zuturn/code/crent/apps/logics/friend.py	/^    my_income['gold'] = income_data.get('gold', 0)/
+get_parameter	/Users/zuturn/code/crent/apps/logics/friend.py	/^    uids = context.get_parameter('uids', '')$/
+get_park_status	/Users/zuturn/code/crent/apps/logics/friend.py	/^    rk_user.game_info.park_status = rk_user.park.g/
+int	/Users/zuturn/code/crent/apps/logics/friend.py	/^    now = int(time.time())$/
+join	/Users/zuturn/code/crent/apps/logics/friend.py	/^    uid = ''.join(uid.split("0"))$/
+modify	/Users/zuturn/code/crent/apps/logics/friend.py	/^    rk_user.game_info.modify('report', award_dict)/
+put	/Users/zuturn/code/crent/apps/logics/friend.py	/^    friend.game_info.put()$/
+update	/Users/zuturn/code/crent/apps/logics/friend.py	/^        news_data.update({$/
