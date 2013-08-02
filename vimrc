@@ -1,12 +1,45 @@
-" Configuration file for vim
-set modelines=0		" CVE-2007-2438
+colorscheme calmar256 
+set expandtab
+set nocompatible
+syntax on
+syntax enable
+set foldmethod=syntax
+set mouse=a
+set helplang=cn
+set autoread
+set number
+set hlsearch
+set incsearch
+set guifont=Monaco:h16
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set shiftround
+set autoindent
+set smartindent
+set encoding=utf8
+set termencoding=utf-8
+set fileencodings=utf-8,GB2312,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set fencs=utf-8,gbk,chinese,latin1
+set nobackup
+set noswapfile
+set foldmethod=indent
 
-" Normally we use vim-extensions. If you want true vi-compatibility
-" remove change the following statements
-set nocompatible	" Use Vim defaults instead of 100% vi compatibility
-set backspace=2		" more powerful backspacing
+filetype plugin on  
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+let g:pydiction_location = '/usr/share/vim/vim73/pydiction/complete-dict'
+let g:pydiction_menu_height = 20
+filetype plugin indent on
 
-" Don't write backup file if vim is being called by "crontab -e"
-au BufWrite /private/tmp/crontab.* set nowritebackup
-" Don't write backup file if vim is being called by "chpass"
-au BufWrite /private/etc/pw.* set nowritebackup
+map <F5> :cc<CR>
+
+
+let NERDChristmasTree=1
+let NERDTreeAutoCenter=1
+let NERDTreeMouseMode=2
+let NERDTreeShowBookmarks=1
+let NERDTreeShowFiles=1
+let NERDTreeWinPos='left'
+let NERDTreeWinSize=26
+let NERDTreeQuitOnOpen=1
+map <F3> :NERDTreeToggle
